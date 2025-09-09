@@ -1,0 +1,2 @@
+Test 1: Output=24  Expected=24
+Test 2: Output=-10  Expected=10
