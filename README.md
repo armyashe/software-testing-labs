@@ -23,9 +23,9 @@ All submissions are organized by week and include:
 * Outputs are saved in `output/` and compared against the  **expected results** .
 * Automated validation is implemented in [`test.ipynb`]().
 
-### How to Run:
+## How to Run:
 
-#### 1. Clone the repository and navigate to the lab folder
+### 1. Clone the repository and navigate to the lab folder
 
 ```
 git clone https://github.com/`<your-username>`/software-testing-labs.git
@@ -33,7 +33,7 @@ cd software-testing-labs/lab1
 
 ```
 
-#### 2. Set up the environment
+### 2. Set up the environment
 
 * Install **g++** (if not already installed):
 
@@ -48,7 +48,7 @@ cd software-testing-labs/lab1
 
   ```
 
-#### 3. Run the assignment
+### 3. Run the assignment
 
 Open the test notebook:
 
@@ -75,7 +75,7 @@ Test 3: Output=No solution                                Expected=No solution
 
 ```
 
-#### 4. Check results
+### 4. Check results
 
 The complete results are stored in:
 
