@@ -1,2 +1,2 @@
-Test 1: Output=2  Expected=2
-Test 2: Output=160  Expected=N/A
+Test 1: Output=2                                                        Expected=2
+Test 2: Output=160                                                      Expected=N/A
