@@ -1,0 +1,9 @@
+Test 1: Output=Infinite solutions.                                      Expected=Infinite solutions
+Test 2: Output=No solution.                                             Expected=No solution
+Test 3: Output=No solution.                                             Expected=No solution
+Test 4: Output= The equation has 2 real solution(s): 2 -2               Expected=2 roots: ±2
+Test 5: Output= The equation has 2 real solution(s): 1.41421 -1.41421   Expected=2 roots: ±√2 ≈ ±1.41421
+Test 6: Output=No solution.                                             Expected=No solution
+Test 7: Output= The equation has 4 real solution(s): 2 -2 1 -1          Expected=4 roots: ±1, ±2
+Test 8: Output= The equation has 2 real solution(s): 1.41421 -1.41421   Expected=2 roots: ±√2 ≈ ±1.41421
+Test 9: Output= The equation has 4 real solution(s): 1 -1 0 -0          Expected=3 roots: ±1, 0
