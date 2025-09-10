@@ -10,33 +10,76 @@ All submissions are organized by week and include:
 
 ## Repository Structure
 
-- `labN/code/` : Source code and input/output files
+- `labN/code/` : C++ source code
+- `labN/input/` : Test case files (.inp)
+- `labN/output/` : Program outputs (.txt)
 - `labN/docs/` : Problem statements and reports
+- `labN/test.ipynb` : Notebook to compile, run, and validate
 
 ## Testing
 
-* Test inputs are stored as `.inp` files.
-* Expected outputs are compared against program results.
-* Example inside [`test.ipynb`]().
+* Test inputs are stored as `.inp` files inside `input/`.
+* Programs are compiled from `code/` and executed with redirected input.
+* Outputs are saved in `output/` and compared against the  **expected results** .
+* Automated validation is implemented in [`test.ipynb`]().
 
 ### How to Run:
 
-Example for **Lab 1 - Exercise e**:
-
-* **Run via Terminal:**
+#### 1. Clone the repository and navigate to the lab folder
 
 ```
-cd lab1/code
-g++ baie.cpp -o baie
-./baie < baie_t1.inp > out.txt
-cat out.txt
+git clone https://github.com/`<your-username>`/software-testing-labs.git
+cd software-testing-labs/lab1
+
 ```
 
-* **Run inside Jupyter Notebook**
+#### 2. Set up the environment
+
+* Install **g++** (if not already installed):
 
   ```
-  !g++ baie.cpp -o baie
-  !./baie < baie_t1.inp > out.txt
-  !echo "Expected: 3"
-  !cat out.txt
+  sudo apt update && sudo apt install g++
+
   ```
+* Install Python (>= 3.8) and Jupyter Notebook:
+
+  ```
+  pip install notebook
+
+  ```
+
+#### 3. Run the assignment
+
+Open the test notebook:
+
+```
+jupyter notebook test.ipynb
+
+```
+
+Inside the notebook, the test workflow will:
+
+* Compile the C++ program from `code/practice1.cpp`.
+* Read inputs from `input/testcasePrac1.inp`.
+* Execute the program and capture the outputs.
+* Compare results with the expected outputs.
+* Write logs into `output/outputPrac1.txt`.
+
+Example output in the notebook:
+
+```
+Test 1: Output=Infinite solutions                         Expected=Infinite solutions
+Test 2: Output=No solution                                Expected=No solution
+Test 3: Output=No solution                                Expected=No solution
+...
+
+```
+
+#### 4. Check results
+
+The complete results are stored in:
+
+```
+lab1/output/outputPrac1.txt
+
+```
